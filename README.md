@@ -4,25 +4,25 @@
 
 
 ##### Collections
-1. Array as a collection.
++ Array as a collection.
 ```php
 $array = ['name' => 'No one', 'age' => 22];
 $person = collect($array);
 ```
-2. Implode
++ Implode
 ```php
 $collection->implode('first_name', ',');
 ```
-3. List
++ List
 ```php
 // returns collection of first_name values
 $collection->lists('first_name');
 ```
-4. Unions
++ Unions
 ```php
 $collection->merge($collection1)->merge($collection2)->merge($collection3);
 ```
-5. Lookaheads
++ Lookaheads
 ```php
 $collection = collect([1=>11, 5=>13, 12=>14, 21=>15])->getCachingIterator();
 foreach ($collection as $key => $value) {
@@ -33,7 +33,7 @@ foreach ($collection as $key => $value) {
 // Each time it is called, it passes its value out to the cache.
 // Therefore, the CachingIterator always seems to be "one behind" its inner object.
 ```
-6. Wildcards
++ Wildcards
 ```php
 // return titles for all posts
 $titles = $posts->pluck('posts.*.title');
