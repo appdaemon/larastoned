@@ -1,4 +1,4 @@
-# larastoned
+# Larastoned
 
 #### A collection of advanced tricks in Laravel 5+
 
