@@ -7,7 +7,7 @@
 + Array as a collection.
 ```php
 $array = ['name' => 'No one', 'age' => 22];
-$person = collect($array);
+$collection = collect($array);
 ```
 + Implode
 ```php
